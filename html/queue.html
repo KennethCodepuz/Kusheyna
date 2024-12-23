@@ -1,18 +1,28 @@
+<!-- queue.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Queue</title>
+    <title>Order Queue</title>
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/queue.css">
 </head>
 <body>
-        <h1>Order Queue</h1>
-        <div class="order-container" id="queueContainer"></div>
-        <div class="back-btn">
-            <a href="index.html">Back to Main Page</a>
-        </div>
+    
+    <h1>📦 Order Queue Management</h1>
+    <div id="queueControls">
+        <button id="dequeueBtn">✅ Process Next Order (Dequeue)</button>
+        <button id="refreshQueueBtn">🔄 Refresh Queue</button>
+        <button id="clearQueueBtn">🗑️ Clear All Orders</button>
+    </div>
+    <div id="queueDisplay">
+        <h2>Current Orders</h2>
+        <ul id="orderList"></ul>
+    </div>
 
-        <script type="module" src="../scripts/queue.js"></script>
+    
+
+    <script type="module" src="../scripts/queue.js"></script>
 </body>
 </html>

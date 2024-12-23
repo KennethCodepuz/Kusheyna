@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+body {
+    background-color: #fff0d9;
+    height: auto;
+}
+
+.logo-img {
+    height: 50vh;
+}
+
+.logo {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.username-input, .email-input{
+    padding-bottom: 2rem;
+} 
+
+.password-input {
+    padding-bottom: 1rem;
+}
+
+.username, .password, .email {
+    width: 20rem;
+    height: 3rem;
+    border-radius: .5rem;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 5px;
+    font-size: 1.2em;
+}
+
+.username-word, .password-text, .email-word {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.register-button {
+    font-family: "Sour Gummy", sans-serif;
+    background-color: #eca458;
+    border: none;
+    border-radius: .6rem;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5em;
+    color: #fff0d9;
+    margin-bottom: 1rem;
+}
+
+.login {
+    width: 20rem;
+}
+
+.login-link {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+

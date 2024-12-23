@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+button, a{
+    cursor:pointer;   
+}
+
+.header {
+    background-color: #fff0d9;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+
+.header-logo img {
+    height: 8rem;
+    overflow: hidden;
+    padding-right: 30px;
+    margin-top: -10px;
+}
+
+.header-logo {
+    display: inline-block;
+    height: 100%;
+    margin-left: 15rem;
+    overflow: hidden;
+}
+
+.topnav {
+    display: flex;
+    flex: 70% 16%;
+    
+}
+
+.navlist {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.7em;
+    display: flex;
+    justify-items: center;
+    gap: 20%;
+    padding-left: 120px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #62260e;
+    font-weight: 600;
+}
+
+.navbutton{
+    border: none;
+    padding: 1rem;
+}
+
+
+.login-button a {
+    font-family: "Sour Gummy", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.login-button {
+    background-color: #62260e;
+    text-decoration: none;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    
+}
+
+.username-display {
+    font-family: "Sour Gummy", sans-serif;
+    color: #fff0d9;
+    font-size: 1.5em;
+}
+
+
+/* Drop down menu start*/
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff0d9;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    right: 0;
+    margin-top: 5px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show dropdown when visible */
+.dropdown-menu.visible {
+    display: block;
+}
+
+/* Username button styles */
+.logged-in {
+    position: relative;
+    cursor: pointer;
+}
+
+.username-display {
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+
+/* Drop down menu end */
+
+.cartphoto {
+    height: 3.5rem;
+    padding-bottom: 1.5rem;
+    
+}
+
+.section1 {
+    background-color: #fff0d9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 5rem;
+    padding-left: 9rem;
+    padding-bottom: 9rem;
+}
+
+.title1 {
+    font-family: "Sour Gummy", sans-serif;
+    width: 30rem;
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-left: 7rem;
+}
+
+.taste {
+    color: orange;
+}
+
+.para1 {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: rgb(80, 79, 79);
+    width: 500px;
+    margin-top: 15px;
+    margin-left: 7rem;
+}
+
+.foodwheel {
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+    margin-right: 21rem;
+}
+
+.foodwheel-image {
+    border-radius: 20px;    
+    width: 25rem;
+    box-shadow: 10px 10px 10px rgb(112, 83, 83);
+}
+
+.orderbutton2 {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #fff0d9;
+    margin-top: 30px;
+    margin-left: 7rem;
+    padding: 1.1rem 2.5rem;
+    border-style: none;
+    background-color: #62260e;
+    border-radius: 50px;
+}
+
+.section2 {
+    margin-top: 150px;
+    height: auto;
+    margin-bottom: 300px;
+}
+
+.section2container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+}
+
+.sectiontitle {
+    font-size:3em;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+.descrip {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 8rem;
+}
+
+.showGrid {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.sec2images{
+    height: 650px;
+    object-fit: cover;
+    padding-bottom: 40%;
+    padding-left: 1%;
+}
+
+.food-info {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.1em;
+}
+
+.food-price {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 1.1em;
+}
+
+.currency {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.buy-now {
+    font-family: "Sour Gummy", sans-serif;
+    color: #62260e;
+    font-size: 1.1em;
+    width: 7rem;
+    height: 3rem;
+    border-style: none;
+    background-color: #eca556;
+    border-radius: .8rem;
+}
+
+.container {
+    padding-left: 3rem;
+}
+
+.second-image {
+    height: 500px;
+    
+}
+
+.image2 {
+    padding-top: 13rem;
+    padding-right: 20%;
+    padding-bottom: 6rem;
+    padding-left: 2rem;
+}
+
+.image3 {
+    padding-top: 6em;
+    /* padding-left: 1rem;padding-left: 1rem; */
+}
+
+.food-description {
+    margin-top: 20px;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.food-name {
+    font-family: "Sour Gummy", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+/* floating window start */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff0d9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.order {
+    margin-bottom: 1rem;
+}
+
+#modalProductName {
+    margin-bottom: .5rem;
+}
+
+.inputs {
+    display: block;
+    font-weight: bold;
+    background-color: #fff0d9;
+    margin-bottom: .7rem;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 0.3rem;
+    border-style: none;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #62260e;
+}
+
+.input-label {
+    margin-bottom: .7rem;
+}
+
+.submit-btn {
+    font-family: "Sour Gummy", sans-serif;
+    height: 3rem;
+    background-color: #eca556;
+    font-size: 1.5em;
+    border-style: none;
+    border-radius: 1rem;
+}
+
+.modal-image-container {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+    
+}
+
+.modal-image {
+    width: 20rem;
+    object-fit: cover;
+    
+}
+/* Floating window end */
+
+
+/* Footer start */
+
+.footer {
+    height: auto;
+}
+
+.footer-container {
+    background-color: #fff0d9;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.footer-description {
+    margin-left: 2rem;
+}
+
+.footer-logo {
+    height: 7rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.page-links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.page-links li a {
+    text-decoration: none;
+    color: black;
+    margin-left: 7rem;
+    font-size: 1.2em;
+}
+
+.email-notification {
+    margin-top: 8rem;
+    margin-left: 30%;
+}
+
+.email-info {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.email-input {
+    height: 3rem;
+    width: 20rem;
+    padding-left: .5rem;
+    border: 1px solid black;
+    background-color: #fff0d9;
+}
+
+.footer-button {
+    height: 3rem;
+    width: 5rem;
+    border: 1px solid black;
+    margin-left: -4px;
+    border-left: none;
+    background-color: #fff0d9;
+    cursor: pointer;
+}
+
+.social-links {
+    list-style-type: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    background-color: #fff0d9;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+

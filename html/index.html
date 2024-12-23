@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Kusheyna</title>
+    <link rel="icon" type="image/x-icon" href="../images/received_752875899930129.jpeg" href="">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="../images/received_752875899930129.jpeg" alt="">
+        </div>
+        <div class="topnav">
+            <li class="navlist">
+                <ul><a href="#">Home</a></ul>
+                <ul><a href="#">Dishes</a></ul>
+                <ul><a href="#">Checkout</a></ul>
+                <ul><a href="#">About</a></ul>
+            </li>
+        </div>
+        <div class="navbutton">
+            <!-- The login button will be replaced by the username if logged in -->
+            <button class="login-button" id="loginButton"><a class="login-link" href="../html/login.html">Log in</a></button>
+        </div>
+    </header>
+
+    <section class="section1">
+        <div>
+            <h1 class="title1">
+                Eat And Enjoy Best <span class="taste">Tasting</span> Dishes!
+            </h1>
+            <p class="para1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quo, dolorum officia eligendi vel commodi dolorem tempore aspernatur animi!
+            </p>
+            <button class="orderbutton2">
+                Order Now
+            </button>
+        </div>
+        <div class="foodwheel">
+            <img class="foodwheel-image" src="../images/20230626_175418.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="section2">
+       <div class="section2container">
+        <h6 class="sectiontitle">Best Selling Products</h6>
+        <p class="descrip">
+            Our Best Selling Products that will make you want more!
+        </p>
+        <div class="showGrid">
+            <div class="container">
+                <div class="image-container">
+                    <img class="sec2images" src="../images/20230619_214400.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <div class="food-name">
+                        Carbonara 
+                    </div> 
+                    <p class="food-info">
+                        The creamiest and best tasting calbonara you will ever have!
+                    </p>
+                    <div class="food-price">
+                        <span class="currency">Php</span> 200.00
+                    </div>
+                    <button class="buy-now"  data-image="../images/carbonara.jpg" data-name="Carbonara">
+                        Buy now!
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="image-container || image2">
+                    <img class="sec2images || second-image" src="../images/20240107_140538.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <div class="food-name">
+                        Fried Chicken 
+                    </div> 
+                    <p class="food-info">
+                        The most Crispylicious and Juicylicious Fried Chicken you will ever taste!
+                    </p>
+                    <div class="food-price">
+                        <span class="currency">Php</span> 250.00
+                    </div>
+                    <button class="buy-now" data-image="../images/friedChicken.jpg" data-name="Fried Chicken">
+                        Buy now!
+                    </button>
+                </div>
+            </div>
+            <div class="containers">
+                <div class="image-container || image3">
+                    <img class="sec2images || third-image" src="../images/20241116_115816.jpg" alt="">
+                </div>
+                <div class="food-description">
+                    <div class="food-name">
+                        Sisig Tofu
+                    </div> 
+                    <p class="food-info">
+                        Creamy and Spicy sisig tofu, with three levels of spiceness.
+                    </p>
+                    <div class="food-price">
+                        <span class="currency">Php</span> 180.00
+                    </div>
+                    <button class="buy-now" data-image="../images/tofu.jpg" data-name="Sizzling Tofu">
+                        Buy now!
+                    </button>
+                </div>
+            </div>
+        </div>
+       </div> 
+    </section>  
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" id="closeModalBtn">&times;</span>
+          <h2 class="order">Order Form: </h2>
+          <h2 id="modalProductName">Product Name</h2>
+          <div class="modal-image-container">
+            <img class="modal-image" src="" alt="Food Image" /> 
+          </div>
+          
+          <form id="modalForm">
+            <div class="form-group">
+              <input class="firstname-input || inputs" type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+            </div>
+            <div class="form-group">
+                <input class="lastname-input || inputs" type="text" id="lastname" name="lastname" placeholder="Lasttname" required>
+            </div>
+            <div class="form-group">
+                <input class="address-input || inputs" type="text" id="address" name="address" placeholder="Address" required>
+            </div>
+            <div class="form-group">
+                <input class="phone-number || inputs" type="tel" id="phone" name="phone" maxlength="11" placeholder="09123456789" required>
+            <div class="form-group">
+              <input class="email || inputs" type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="message || inputs" id="message" name="message" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-description">
+                <img class="footer-logo" src="../images/received_752875899930129.jpeg" alt="">
+                <div>
+                    <ul class="page-links">
+                        <li><a href="#">About Kusheyna</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Customer Care</a></li>
+                        <li><a href="#">Food Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="email-notification">
+                <div class="email-info">Get the newest dishes</div>
+                <input class="email-input" placeholder="example@gmail.com" type="email">
+                <button class="footer-button">
+                    Subscribe   
+                </button>
+                <ul class="social-links">
+                    <li><a href="#"><img src="../icon/icons8-facebook-48.png" alt=""></a></li>
+                    <li><a href="#"><img src="../icon/icons8-instagram-48.png" alt=""></a></li>
+                    <li><a href="#"><img src="../icon/icons8-twitter-48.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-container">
+            <p>&copy; 2020–2024 Luck and Hershey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="../scripts/index.js"></script>
+</body>
+</html>
